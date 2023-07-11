@@ -43,7 +43,7 @@ class App extends React.Component<any, any> {
 
     const wopiSrc = `${locationOrigin}/wopi/files/1`;
 
-    fetch(`/collaboraUrl?server=${wopiClientHost}`)
+    fetch(`http://localhost:3001/collaboraUrl?server=${wopiClientHost}`)
       .then((response) => response.json())
       .then((data) => {
         const wopiClientUrl = data.url;
