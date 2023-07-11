@@ -13,6 +13,9 @@ class LoaderForm extends React.Component<any, any> {
   }
 
   render() {
+    console.log("URL: ", this.props.url);
+    console.log("Token: ", this.props.token);
+
     return (
       <div style={{ display: "none" }}>
         <form
