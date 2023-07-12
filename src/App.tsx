@@ -41,7 +41,7 @@ class App extends React.Component<any, any> {
     //   return;
     // }
 
-    const wopiSrc = `https://collabora-express-9r239.ondigitalocean.app/`;
+    const wopiSrc = `https://collabora-express-9r239.ondigitalocean.app/wopi/files/1`;
 
     fetch(`http://localhost:3001/collaboraUrl?server=${wopiClientHost}`)
       .then((response) => response.json())
