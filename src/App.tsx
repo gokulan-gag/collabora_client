@@ -80,11 +80,11 @@ class App extends React.Component<any, any> {
           onSubmit={this.handleSubmit}
         />
         {loaderForm}
-        {/* <iframe
+        <iframe
           title="Collabora Online Viewer"
           id="collabora-online-viewer"
           name="collabora-online-viewer"
-        ></iframe> */}
+        ></iframe>
       </div>
     );
   }
