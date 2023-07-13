@@ -43,7 +43,9 @@ class App extends React.Component<any, any> {
 
     const wopiSrc = `https://collabora-express-9r239.ondigitalocean.app/wopi/files/1`;
 
-    fetch(`http://localhost:3001/collaboraUrl?server=${wopiClientHost}`)
+    fetch(
+      `https://collabora-express-9r239.ondigitalocean.app/collaboraUrl?server=${wopiClientHost}`
+    )
       .then((response) => response.json())
       .then((data) => {
         const wopiClientUrl = data.url;
